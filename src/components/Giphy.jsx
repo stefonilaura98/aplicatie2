@@ -91,10 +91,6 @@ const Giphy = () => {
     setIsLoading(false);
   };
 
-  //   const pageSelected = (pageNumber) => {
-  //     setCurrentPage(pageNumber);
-  //   };
-
   return (
     <div className="m-2">
       {renderError()}
@@ -111,15 +107,10 @@ const Giphy = () => {
           type="submit"
           className="btn btn-primary mx-2"
         >
-          Go
+          Search
         </button>
       </form>
-      {/* <Paginate
-        pageSelected={pageSelected}
-        currentPage={currentPage}
-        itemsPerPage={itemsPerPage}
-        totalItems={data.length}
-      /> */}
+
       <div className="container gifs">{renderGifs()}</div>
     </div>
   );
